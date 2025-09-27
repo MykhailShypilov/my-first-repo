@@ -1,1 +1,3 @@
-# my-first-repo
+# My First Repository
+
+FIRST DEMO REPOSITORY
