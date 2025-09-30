@@ -4,17 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homework 5</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="styles.css ">
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <section>
-            <h1>My homework</h1>
-        </section>
-    </main>
-    <fotter></fotter>
+    <div class="form-container">
+        <h2>Login | Register</h2>
+        <p>Enter your email and password to register.</p>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Or register with</p>
+        <div class="social-btn">
+            <img src="./google.jpg" alt="Google logo">
+            Continue with Google
+        </div>
+        <div class="social-btn">
+            <img src="./facebook.jpg" alt="Facebook logo">
+            Continue with Facebook
+        </div>
+    </div>
 </body>
 
 </html>
