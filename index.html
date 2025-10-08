@@ -3,34 +3,115 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 5</title>
+    <title>Plant Shop</title>
     <link rel="stylesheet" href="./css/Reset.css">
     <link rel="stylesheet" href="./css/Normalize.css">
-    <link rel="stylesheet" href="./css/Styles.css ">
+    <link rel="stylesheet" href="/css/Styles.css">
 </head>
 
 <body>
-    <div class="form-container">
-        <h2>Login | Register</h2>
-        <p>Enter your email and password to register.</p>
-        <form action="#" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="email" name="email" placeholder="Enter your email address" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm" placeholder="Confirm Password" required>
-            <button type="submit">Register</button>
-        </form>
-        <p>Or register with</p>
-        <div class="social-btn">
-            <img src="./Images/Google.jpg" alt="Google logo">
-            Continue with Google
-        </div>
-        <div class="social-btn">
-            <img src="./Images/facebook.jpg" alt="Facebook logo">
-            Continue with Facebook
-        </div>
-    </div>
+    <main>
+        <aside class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">House Plants</a></li>
+                <li><a href="#">Potter Plants</a></li>
+                <li><a href="#">Seeds</a></li>
+                <li><a href="#">Small Plants</a></li>
+                <li><a href="#">Big Plants</a></li>
+                <li><a href="#">Succulents</a></li>
+                <li><a href="#">Terrariums</a></li>
+                <li><a href="#">Gardening</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            <div class="banner">
+                <div class="banner-text">
+                    <h2>Super Sale</h2>
+                    <p>UP TO 75% OFF</p>
+                </div>
+                <img src="./Images/Banner.png" alt="Super Sale" />
+            </div>
+        </aside>
+        <section class="products-section">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">All Plants</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+                <div class="sort">
+                    <span class="sort-label">Sort by:</span>
+                    <div class="sort-mock">
+                        Default sorting
+                        <span class="arrow">▼</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="products-row">
+                <article class="product">
+                    <img src="./Images/Image1.png" alt="Plant 1" />
+                    <h3>Barberton Daisy</h3>
+                    <p class="price">$119.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image2.png" alt="Plant 2" />
+                    <h3>Angel Wing Begonia</h3>
+                    <p class="price">$169.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image3.png" alt="Plant 3" />
+                    <h3>African Violet</h3>
+                    <p class="price">$199.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image4.png" alt="Plant 4" />
+                    <h3>Beach Spider Lily</h3>
+                    <p class="price">$129.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image5.png" alt="Plant 5" />
+                    <h3>Blushing Bromeliad</h3>
+                    <p class="price">$139.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image6.png" alt="Plant 6" />
+                    <h3>Aluminum Plant</h3>
+                    <p class="price">$179.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image7.png" alt="Plant 7" />
+                    <h3>Bird’s Nest Fern</h3>
+                    <p class="price">$99.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image8.png" alt="Plant 8" />
+                    <h3>Broadleaf Lady Palm</h3>
+                    <p class="price">$59.00</p>
+                </article>
+
+                <article class="product">
+                    <img src="./Images/Image9.png" alt="Plant 9" />
+                    <h3>Chinese Evergreen</h3>
+                    <p class="price">$39.00</p>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
