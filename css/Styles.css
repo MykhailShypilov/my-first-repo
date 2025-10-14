@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  src: url("../Fonts/CeraPro-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  src: url("../Fonts/CeraPro-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -23,9 +23,6 @@ body {
   margin-top: 200px;
 }
 
-
-
-/* === СЕКЦИЯ ПРОДУКТОВ === */
 .product-section {
   max-width: 980px;
   margin: 0 auto;
@@ -79,7 +76,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* === КАРТОЧКА === */
 .product-card {
   width: 300px;
   text-align: left;
@@ -99,14 +95,13 @@ body {
   border-top: 2px solid #46A358;
 }
 
-/* === ИКОНКИ === */
 .hover-overlay {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 25px; /* расстояние между иконками (~2 см на глаз) */
+  gap: 25px; 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -144,7 +139,6 @@ body {
   filter: brightness(0) saturate(100%) invert(100%);
 }
 
-/* === НАЗВАНИЕ И ЦЕНА === */
 .product-name {
   margin: 15px 0 5px 0;
   font-weight: 500;
@@ -162,7 +156,6 @@ body {
   margin-left: 8px;
 }
 
-/* === СТИКЕР СКИДКИ === */
 .discount {
   position: absolute;
   top: 15px;
