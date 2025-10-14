@@ -1,224 +1,177 @@
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: #f9f9f9;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Cera Pro", sans-serif;
+  background: #ffffff;
+  color: #3D3D3D;
+  margin-top: 200px;
 }
 
-main {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 16px;
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
+
+
+/* === СЕКЦИЯ ПРОДУКТОВ === */
+.product-section {
+  max-width: 980px;
+  margin: 0 auto;
+  
 }
 
-.categories {
-    width: 250px;
-    min-height: 774px;
-    background-color: #FBFBFB;
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    flex-shrink: 0;
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.categories h3 {
-    margin: 4px 0 22px -8px;
-    color: #3D3D3D;
-    font-weight: 700;
+.product-tabs {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
 }
 
-.categories ul {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0 0 0;
+.product-tabs li {
+  cursor: pointer;
+  color: #3D3D3D;
+  font-weight: 500;
 }
 
-.categories li { margin-bottom: 30px; }
-
-.categories a {
-    text-decoration: none;
-    color: #333;
+.product-tabs li.active {
+  color: #46A358;
+  border-bottom: 2px solid #46A358;
+  padding-bottom: 3px;
 }
-
-.categories a:hover { color: #4CAF50; }
-
-.banner {
-    width: 110%;
-    margin-top: 100px;
-    border: 2px solid;
-    border-image: linear-gradient(140.71deg, #46A358 -61.14%, rgba(70, 163, 88, 0) 122.5%) 1;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-}
-
-.banner img {
-    width: 100%;
-    height: 400px;
-    display: block;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.banner-text {
-    text-align: center;
-    margin-bottom: 10px; 
-}
-
-.banner-text h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #46A358;
-    margin: 0;
-}
-
-.banner-text p {
-    font-size: 18px;
-    color: #333;
-    margin: 5px 0 0 0;
-}
-
-.products-section {
-    flex: 1;
-    min-width: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.main-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 18px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-.main-nav a:hover { color: #4CAF50; }
 
 .sort {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-}
-
-.sort-label {
-    color: #333;
-    font-size: 16px;
-}
-
-.sort-mock {
+    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 6px;
-    color: #333;
-    font-size: 16px;
-    cursor: default; /* не кликается */
-    user-select: none;
 }
 
-.sort-mock .arrow {
-    font-size: 10px;
-    color: #333;
-    transform: translateY(1px);
-}
-
-.products-row {
-    font-size: 0;
-    margin-bottom: 30px;
-}
-
-.product {
-    display: inline-block;
-    vertical-align: top;
-    width: calc((100% - 40px * 3) / 3);
-    margin: 0 20px 40px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 12px;
-    text-align: center;
-    font-size: 16px;
-    transition: transform .18s ease;
-}
-
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.product h3 {
-    margin: 10px 0 6px;
-    font-size: 15px;
-    font-weight: 200;
+.sort select {
+    border: none;
+    background: transparent;
+    outline: none;
     color: #3D3D3D;
+    cursor: default;
 }
 
-.product .price {
-    margin: 0;
-    color: #4CAF50;
-    font-weight: 700;
+.product-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.pagination {
-    display: flex;
-    justify-content: right;
-    margin: 34px 0;
-    gap: 8px;
+/* === КАРТОЧКА === */
+.product-card {
+  width: 300px;
+  text-align: left;
+  position: relative;
 }
 
-.pagination a {
-    text-decoration: none;
-    color: #333;
-    padding: 8px 12px;
-    border: 1px solid #e6e6e6;
-    border-radius: 6px;
-    font-weight: 500;
+.product-image {
+  position: relative;
+  overflow: hidden;
+  background: #FBFBFB;
+  padding: 30px 20px;
+  transition: border 0.3s ease;
+  border: 1px solid transparent;
 }
 
-.pagination a.active {
-    background: #4CAF50;
-    color: #fff;
-    border-color: #4CAF50;
+.product-card:hover .product-image {
+  border-top: 2px solid #46A358;
 }
 
-.pagination a:hover {
-    background: #4CAF50;
-    color: #fff;
+/* === ИКОНКИ === */
+.hover-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px; /* расстояние между иконками (~2 см на глаз) */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hover-icon:hover {
+  background: #46A358;
+  transform: scale(1.1);
+}
+
+.hover-icon img {
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s ease;
+  filter: brightness(0) saturate(100%);
+}
+
+.hover-icon:hover img {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+/* === НАЗВАНИЕ И ЦЕНА === */
+.product-name {
+  margin: 15px 0 5px 0;
+  font-weight: 500;
+  color: #3D3D3D;
+}
+
+.product-price {
+  color: #46A358;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #A5A5A5;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+/* === СТИКЕР СКИДКИ === */
+.discount {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: #46A358;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 29px;
+  border-radius: 3px;
+  font-weight: 600;
+  z-index: 2;
 }

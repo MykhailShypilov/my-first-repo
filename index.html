@@ -3,115 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Plant Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Shop</title>
     <link rel="stylesheet" href="./css/Reset.css">
     <link rel="stylesheet" href="./css/Normalize.css">
-    <link rel="stylesheet" href="/css/Styles.css">
+    <link rel="stylesheet" href="./css/Styles.css">
 </head>
 
 <body>
-    <main>
-        <aside class="categories">
-            <h3>Categories</h3>
-            <ul>
-                <li><a href="#">House Plants</a></li>
-                <li><a href="#">Potter Plants</a></li>
-                <li><a href="#">Seeds</a></li>
-                <li><a href="#">Small Plants</a></li>
-                <li><a href="#">Big Plants</a></li>
-                <li><a href="#">Succulents</a></li>
-                <li><a href="#">Terrariums</a></li>
-                <li><a href="#">Gardening</a></li>
-                <li><a href="#">Accessories</a></li>
+    <section class="product-section">
+        <div class="product-header">
+            <ul class="product-tabs">
+                <li class="active">All Plants</li>
+                <li>New Arrivals</li>
+                <li>Sale</li>
             </ul>
-            <div class="banner">
-                <div class="banner-text">
-                    <h2>Super Sale</h2>
-                    <p>UP TO 75% OFF</p>
-                </div>
-                <img src="./Images/Banner.png" alt="Super Sale" />
+            <div class="sort">
+                <label for="sort-select" class="sort-label">Sort by:</label>
+                <select id="sort-select" name="sort">
+                    <option selected>Default sorting</option>
+                </select>
             </div>
-        </aside>
-        <section class="products-section">
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#">All Plants</a></li>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Sale</a></li>
-                </ul>
-                <div class="sort">
-                    <span class="sort-label">Sort by:</span>
-                    <div class="sort-mock">
-                        Default sorting
-                        <span class="arrow">▼</span>
+            <!-- <div class="sorting">
+                <span>Sort by:</span> Default sorting <span class="arrow">^</span>
+            </div> -->
+        </div>
+
+        <div class="product-grid">
+            <!-- CARD 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Images/plant1.png" alt="Barberton Daisy" />
+                    <div class="hover-overlay">
+                        <div class="hover-icon"><img src="/Images/icons/cart.png" alt="cart" /></div>
+                        <div class="hover-icon"><img src="/Images/icons/heart.png" alt="heart" /></div>
+                        <div class="hover-icon"><img src="/Images/icons/search.png" alt="search" /></div>
                     </div>
                 </div>
-            </nav>
-            <div class="products-row">
-                <article class="product">
-                    <img src="./Images/Image1.png" alt="Plant 1" />
-                    <h3>Barberton Daisy</h3>
-                    <p class="price">$119.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image2.png" alt="Plant 2" />
-                    <h3>Angel Wing Begonia</h3>
-                    <p class="price">$169.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image3.png" alt="Plant 3" />
-                    <h3>African Violet</h3>
-                    <p class="price">$199.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image4.png" alt="Plant 4" />
-                    <h3>Beach Spider Lily</h3>
-                    <p class="price">$129.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image5.png" alt="Plant 5" />
-                    <h3>Blushing Bromeliad</h3>
-                    <p class="price">$139.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image6.png" alt="Plant 6" />
-                    <h3>Aluminum Plant</h3>
-                    <p class="price">$179.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image7.png" alt="Plant 7" />
-                    <h3>Bird’s Nest Fern</h3>
-                    <p class="price">$99.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image8.png" alt="Plant 8" />
-                    <h3>Broadleaf Lady Palm</h3>
-                    <p class="price">$59.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image9.png" alt="Plant 9" />
-                    <h3>Chinese Evergreen</h3>
-                    <p class="price">$39.00</p>
-                </article>
+                <p class="product-name">Barberton Daisy</p>
+                <p class="product-price">$119.00</p>
             </div>
 
-            <div class="pagination">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">&raquo;</a>
+            <!-- CARD 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Images/plant2.png" alt="Angel Wing Begonia" />
+                    <div class="hover-overlay">
+                        <div class="hover-icon"><img src="/Images/icons/cart.png" alt="cart" /></div>
+                        <div class="hover-icon"><img src="/Images/icons/heart.png" alt="heart" /></div>
+                        <div class="hover-icon"><img src="/Images/icons/search.png" alt="search" /></div>
+                    </div>
+                </div>
+                <p class="product-name">Angel Wing Begonia</p>
+                <p class="product-price">$169.00</p>
             </div>
-        </section>
-    </main>
+
+            <!-- CARD 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Images/plant3.png" alt="African Violet" />
+                    <span class="discount">13% OFF</span>
+                    <div class="hover-overlay">
+                        <div class="hover-icon"><img src="/Images/icons/cart.png" alt="cart" /></div>
+                        <div class="hover-icon"><img src="/Images/icons/heart.png" alt="heart" /></div>
+                        <div class="hover-icon"><img src="/Images/icons/search.png" alt="search" /></div>
+                    </div>
+                </div>
+                <p class="product-name">African Violet</p>
+                <p class="product-price">
+                    $199.00 <span class="old-price">$229.00</span>
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
