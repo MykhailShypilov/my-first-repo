@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: "Cera Pro", sans-serif;
   background: #ffffff;
   color: #3D3D3D;
@@ -27,6 +27,20 @@ body {
   max-width: 980px;
   margin: 0 auto;
   
+} */
+
+body {
+  font-family: "Cera Pro", sans-serif;
+  background: #ffffff;
+  color: #3D3D3D;
+  margin: 0; 
+  padding: 40px 20px;
+}
+
+.product-section {
+  width: 100%; 
+  max-width: none; 
+  padding: 150px 350px; 
 }
 
 .product-header {
@@ -74,6 +88,7 @@ body {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  justify-content: center; 
 }
 
 .product-card {
