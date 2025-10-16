@@ -3,115 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Plant Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Shop</title>
     <link rel="stylesheet" href="./css/Reset.css">
     <link rel="stylesheet" href="./css/Normalize.css">
-    <link rel="stylesheet" href="/css/Styles.css">
+    <link rel="stylesheet" href="./css/Styles.css">
 </head>
 
 <body>
-    <main>
-        <aside class="categories">
-            <h3>Categories</h3>
-            <ul>
-                <li><a href="#">House Plants</a></li>
-                <li><a href="#">Potter Plants</a></li>
-                <li><a href="#">Seeds</a></li>
-                <li><a href="#">Small Plants</a></li>
-                <li><a href="#">Big Plants</a></li>
-                <li><a href="#">Succulents</a></li>
-                <li><a href="#">Terrariums</a></li>
-                <li><a href="#">Gardening</a></li>
-                <li><a href="#">Accessories</a></li>
-            </ul>
-            <div class="banner">
-                <div class="banner-text">
-                    <h2>Super Sale</h2>
-                    <p>UP TO 75% OFF</p>
-                </div>
-                <img src="./Images/Banner.png" alt="Super Sale" />
-            </div>
-        </aside>
-        <section class="products-section">
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#">All Plants</a></li>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Sale</a></li>
+    <header class="header">
+        <div class="logo">
+            <img src="./Images/Logo.png" alt="GreenShop Logo">
+            <span>GREENSHOP</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+
+            <div class="dropdown">
+                <a href="#" class="nav-link">Plant Care</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Drainage</a></li>
+                    <li><a href="#">Fungicides</a></li>
+                    <li><a href="#">Fertilizer</a></li>
+                    <li class="has-submenu">
+                        <a href="#">Priming ▸</a>
+                        <ul class="submenu">
+                            <li><a href="#">Universal</a></li>
+                            <li><a href="#">For Ficus</a></li>
+                            <li><a href="#">For Cacti</a></li>
+                            <li><a href="#">For Citrus</a></li>
+                            <li><a href="#">For those in bloom</a></li>
+                            <li><a href="#">For Orchids</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <div class="sort">
-                    <span class="sort-label">Sort by:</span>
-                    <div class="sort-mock">
-                        Default sorting
-                        <span class="arrow">▼</span>
-                    </div>
-                </div>
-            </nav>
-            <div class="products-row">
-                <article class="product">
-                    <img src="./Images/Image1.png" alt="Plant 1" />
-                    <h3>Barberton Daisy</h3>
-                    <p class="price">$119.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image2.png" alt="Plant 2" />
-                    <h3>Angel Wing Begonia</h3>
-                    <p class="price">$169.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image3.png" alt="Plant 3" />
-                    <h3>African Violet</h3>
-                    <p class="price">$199.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image4.png" alt="Plant 4" />
-                    <h3>Beach Spider Lily</h3>
-                    <p class="price">$129.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image5.png" alt="Plant 5" />
-                    <h3>Blushing Bromeliad</h3>
-                    <p class="price">$139.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image6.png" alt="Plant 6" />
-                    <h3>Aluminum Plant</h3>
-                    <p class="price">$179.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image7.png" alt="Plant 7" />
-                    <h3>Bird’s Nest Fern</h3>
-                    <p class="price">$99.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image8.png" alt="Plant 8" />
-                    <h3>Broadleaf Lady Palm</h3>
-                    <p class="price">$59.00</p>
-                </article>
-
-                <article class="product">
-                    <img src="./Images/Image9.png" alt="Plant 9" />
-                    <h3>Chinese Evergreen</h3>
-                    <p class="price">$39.00</p>
-                </article>
             </div>
 
-            <div class="pagination">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">&raquo;</a>
+            <a href="#">Blogs</a>
+        </nav>
+
+        <a href="#" class="login-btn">
+            <img src="./Images/LoginButton.png" alt="Login" class="login-icon">
+            Login
+        </a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h5>WELCOME TO GREENSHOP</h5>
+                <h1>LET'S MAKE A <br> BETTER <span>PLANET</span></h1>
+                <p>
+                    We are an online plant shop offering a wide range of cheap and trendy plants.
+                    Use our plants to create an unique Urban Jungle. Order your favorite plants!
+                </p>
+                <a href="#" class="shop-now-btn">SHOP NOW</a>
+            </div>
+            <div class="hero-image">
+                <img src="./Images/01.png" alt="Plant 1">
+                <img src="./Images/02.png" alt="Plant 2" class="plant-small">
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        &copy; 2025 GreenShop. All rights reserved.
+    </footer>
 </body>
 
 </html>
