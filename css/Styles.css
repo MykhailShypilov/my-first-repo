@@ -3,6 +3,7 @@
   src: url("../Fonts/CeraPro-Regular.ttf") format("truetype");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../Fonts/CeraPro-Bold.ttf") format("truetype");
