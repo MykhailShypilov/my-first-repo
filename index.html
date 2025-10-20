@@ -4,73 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Shop</title>
+    <title>GreenShop Footer</title>
     <link rel="stylesheet" href="./css/Reset.css">
     <link rel="stylesheet" href="./css/Normalize.css">
     <link rel="stylesheet" href="./css/Styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="./Images/Logo.png" alt="GreenShop Logo">
-            <span>GREENSHOP</span>
-        </div>
+    <div class="footer-wrapper">
+        <footer class="footer">
 
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
+            <div class="footer-top">
+                <div class="footer-card">
+                    <div class="icon garden"></div>
+                    <h3 class="title text-bold">Garden Care</h3>
+                    <p class="text-medium">We are an online plant shop offering a wide range of cheap and trendy plants.
+                    </p>
+                </div>
 
-            <div class="dropdown">
-                <a href="#" class="nav-link">Plant Care</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Drainage</a></li>
-                    <li><a href="#">Fungicides</a></li>
-                    <li><a href="#">Fertilizer</a></li>
-                    <li class="has-submenu">
-                        <a href="#">Priming ▸</a>
-                        <ul class="submenu">
-                            <li><a href="#">Universal</a></li>
-                            <li><a href="#">For Ficus</a></li>
-                            <li><a href="#">For Cacti</a></li>
-                            <li><a href="#">For Citrus</a></li>
-                            <li><a href="#">For those in bloom</a></li>
-                            <li><a href="#">For Orchids</a></li>
+                <div class="divider"></div>
+
+                <div class="footer-card">
+                    <div class="icon renovation"></div>
+                    <h3 class="title text-bold">Plant Renovation</h3>
+                    <p class="text-medium">We are an online plant shop offering a wide range of cheap and trendy plants.
+                    </p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="footer-card">
+                    <div class="icon watering"></div>
+                    <h3 class="title text-bold">Watering Garden</h3>
+                    <p class="text-medium">We are an online plant shop offering a wide range of cheap and trendy plants.
+                    </p>
+                </div>
+
+                <div class="newsletter">
+                    <h3 class="title text-bold">Would you like to join newsletters?</h3>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Enter your email address.." class="text-regular">
+                        <button class="text-bold">Join</button>
+                    </div>
+                    <p class="text-small newsletter-text">
+                        We usually post offers and challenges in newsletter. We're your online houseplant destination.
+                        We offer a wide range of houseplants and accessories shipped directly from our (green)house to
+                        yours!
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="logo">
+                    <img src="./Images/logo.svg" alt="GreenShop Logo">
+                </div>
+                <div class="address text-small">
+                    <a href="https://www.google.com/maps/place/70+West+Buckingham+Ave,+Farmingdale,+NY+11735"
+                        target="_blank" class="text-regular">
+                        70 West Buckingham Ave.<br>Farmingdale, NY 11735
+                    </a>
+                </div>
+                <div class="contact text-small">
+                    <a href="mailto:contact@greenshop.com" class="text-regular">contact@greenshop.com</a>
+                </div>
+                <div class="phone text-small">
+                    <a href="tel:+8801911717490" class="text-regular">+88 01911 717 490</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-columns">
+
+                    <div>
+                        <h4 class="column-title text-bold">My Account</h4>
+                        <ul>
+                            <li class="text-small">My Account</li>
+                            <li class="text-small">Our stores</li>
+                            <li class="text-small">Contact us</li>
+                            <li class="text-small">Career</li>
+                            <li class="text-small">Specials</li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="column-title text-bold">Help & Guide</h4>
+                        <ul>
+                            <li class="text-small">Help Center</li>
+                            <li class="text-small">How to Buy</li>
+                            <li class="text-small">Shipping & Delivery</li>
+                            <li class="text-small">Product Policy</li>
+                            <li class="text-small">How to Return</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="column-title text-bold">Categories</h4>
+                        <ul>
+                            <li class="text-small">House Plants</li>
+                            <li class="text-small">Potter Plants</li>
+                            <li class="text-small">Seeds</li>
+                            <li class="text-small">Small Plants</li>
+                            <li class="text-small">Accessories</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="column-title text-bold">Social Media</h4>
+                        <div class="social-icons">
+                            <div class="social fb"></div>
+                            <div class="social ig"></div>
+                            <div class="social tw"></div>
+                            <div class="social in"></div>
+                            <div class="social yt"></div>
+                        </div>
+                        <h4 class="column-title text-bold accept">We accept</h4>
+                        <div class="payment"></div>
+                    </div>
+
+                </div>
             </div>
 
-            <a href="#">Blogs</a>
-        </nav>
-
-        <a href="#" class="login-btn">
-            <img src="./Images/LoginButton.png" alt="Login" class="login-icon">
-            Login
-        </a>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h5>WELCOME TO GREENSHOP</h5>
-                <h1>LET'S MAKE A <br> BETTER <span>PLANET</span></h1>
-                <p>
-                    We are an online plant shop offering a wide range of cheap and trendy plants.
-                    Use our plants to create an unique Urban Jungle. Order your favorite plants!
-                </p>
-                <a href="#" class="shop-now-btn">SHOP NOW</a>
+            <div class="copyright text-small">
+                © 2021 GreenShop. All Rights Reserved.
             </div>
-            <div class="hero-image">
-                <img src="./Images/01.png" alt="Plant 1">
-                <img src="./Images/02.png" alt="Plant 2" class="plant-small">
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        &copy; 2025 GreenShop. All rights reserved.
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
