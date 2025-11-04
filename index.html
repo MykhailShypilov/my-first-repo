@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenShop</title>
+    <link rel="stylesheet" href="./css/Reset.css">
+    <link rel="stylesheet" href="./css/Normalize.css">
     <link rel="stylesheet" href="./css/Styles.css">
 </head>
 
@@ -42,16 +43,10 @@
                 <a href="#">Blogs</a>
             </nav>
             <div class="login-container">
-                <a href="#" class="login-btn">
+                <a href="./login.html" class="login-btn">
                     <img src="./Images/Login.svg" alt="Login icon">
                     <span>Login</span>
                 </a>
-                <!-- <form class="login-form">
-                    <h3>Login</h3>
-                    <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
-                    <button type="submit">Sign In</button>
-                </form> -->
             </div>
         </div>
     </header>
@@ -429,17 +424,6 @@
             </footer>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginBtn = document.querySelector('.login-btn');
-            const loginForm = document.querySelector('.login-form');
-            loginBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                loginForm.classList.toggle('active');
-            });
-        });
-    </script>
 </body>
 
 </html>
