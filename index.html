@@ -18,6 +18,12 @@
                 <img src="./Images/Logo.png" alt="GreenShop Logo">
                 <span>GREENSHOP</span>
             </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <nav class="nav">
                 <a href="#">Home</a>
                 <a href="#">Shop</a>
@@ -71,8 +77,8 @@
     <!-- Main Content -->
     <main>
         <aside class="categories">
-            <h3>Categories</h3>
             <ul>
+                <h3>Categories</h3>
                 <li><a href="#">House Plants</a></li>
                 <li><a href="#">Potter Plants</a></li>
                 <li><a href="#">Seeds</a></li>
@@ -429,6 +435,19 @@
             </footer>
         </div>
     </footer>
+
+    <script src="./script.js">
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.nav');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('open');
+        });
+
+    </script>
+
+
 </body>
 
 </html>
